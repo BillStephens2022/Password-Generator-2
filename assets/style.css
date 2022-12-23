@@ -5,11 +5,11 @@ body {
 }
 
 .hero {
-    height: 150px;
-    width: 100%;
+    max-height: 300px;   
     text-align: center;
-    margin-bottom: 25px;
     background: radial-gradient(black, #39FF14);
+    align-items: center;
+    display: block;
 }
 
 h1 {
@@ -27,10 +27,14 @@ h1 {
     0 0 151px #39FF14;
 }
 
+.app {
+    height: 60vh;
+}
+
 form {
     margin-top: 25px;
-    width: 500px;
-    height: 60vh;
+    max-width: 500px;
+    max-height: 1000px;
     padding: 50px;
     border: 5px solid white;
     border-radius: 10px;
@@ -50,7 +54,7 @@ form {
 }
 
 #slider {
-    width: 250px;
+    max-width: 250px;
    
 }
 
@@ -70,10 +74,7 @@ form {
     color: #39FF14;
 }
 
-.app {
-    height: 60vh;
-    
-}
+
 
 textarea {
     -webkit-appearance: none;
@@ -113,3 +114,66 @@ textarea {
     color: black;
     box-shadow: 3px 3px 10px white;
 }
+
+@media screen and (max-width: 900px) {
+    h1 {
+      font-size: 4.75em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+      font-size: 4.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4em;
+  }
+  form, .app {
+    max-width: 500px;
+    margin: 0;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    
+}
+  textarea {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+  #min, #max {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+    h1 {
+      font-size: 3em;
+    }
+    form, .app {
+        max-width: 280px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    textarea {
+        width: 250px;
+        height: 200px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+
+    #min, #max {
+        display: inline-block;
+    }
+  }
+  
