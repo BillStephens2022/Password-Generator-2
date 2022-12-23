@@ -4,6 +4,10 @@
 
   This website contains a Password Generator.  The user will make selections as to the number of required characters and character type(uppercase, lowercase, number, special characters). Selections are made on a slider for number of characters and checkboxes for the required character types.  A password is then generated meeting the user's requirements.
   
+  Screenshot:
+  
+  ![Screen Shot 2022-12-23 at 2 00 04 PM](https://user-images.githubusercontent.com/113722447/209394864-a9feca91-6150-40f5-a58c-f957c7f5d5ae.png)
+
   ## Table of Contents
   
   - [Installation](#installation)
