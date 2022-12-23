@@ -17,13 +17,11 @@
     <div class="app">
         <form>
             <div class="row mb-3">
-                <label for="customRange1" class="form-label">Required Number of Characters</label>
-                
+                <label for="customRange1" class="form-label">Required Number of Characters</label>               
                 <div>
                     <span>min: 8 </span><input type="range" class="form-range" id="slider" min="8" max="128" value="8" onchange="updateSpan(this.value);"><span> max: 128</span>
                     <label># of characters selected: <span id="sliderValue">8</span></label>
                 </div>
-
             </div>
             <div class="row mb-3 checkboxes">
                 <div class="form-check">
@@ -50,23 +48,12 @@
                         Needs Special Characters?
                     </label>
                 </div>
-            </div>
-            
-            <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-          <button type="submit" class="btn" id="generatePasswordButton">Generate Password</button>
-          <p id="error-message"></p>
-        </form>
-        
-        
+            </div>         
+            <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+            <button type="submit" class="btn" id="generatePasswordButton">Generate Password</button>
+            <p id="error-message"></p>
+        </form>     
     </div>
-
-
-
 
     <!-- JQuery -->
     <script

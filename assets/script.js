@@ -1,11 +1,8 @@
-
 function updateSpan(val) {
     document.getElementById('sliderValue').textContent = val;
 }
 
 const errorMessageEl = $("#error-message");
-
-
 
 function generatePassword() {
     
@@ -67,15 +64,9 @@ function writePassword(e) {
     e.preventDefault();
     let password = generatePassword();
     const passwordText = document.querySelector("#password");
-  
     passwordText.value = password;
     console.log(password);
     console.log(passwordText.value);
   }
 
 $("#generatePasswordButton").click(writePassword);
-
-
-
-
-
